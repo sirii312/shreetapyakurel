@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Typing Speed Test</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="theme-toggle">
+    <label>
+      <input type="checkbox" id="darkModeToggle" />
+      🌙 Dark Mode
+    </label>
+  </div>
+
+  <div class="container">
+    <h1>Typing Speed Test</h1>
+
+    <div class="time-select">
+      <label for="duration">Select Duration: </label>
+      <select id="duration">
+        <option value="30">30s</option>
+        <option value="60" selected>60s</option>
+        <option value="90">90s</option>
+      </select>
+    </div>
+
+    <div class="timer">Time left: <span id="time">60</span>s</div>
+    <div class="progress-bar"><div id="progress"></div></div>
+
+    <div id="original-text"></div>
+    <textarea id="user-input" placeholder="Start typing here..." disabled></textarea>
+    <button id="start-btn">Start Test</button>
+
+    <div class="results">
+      <h2>Results</h2>
+      <p>Speed: <span id="wpm">0</span> WPM</p>
+      <p>Accuracy: <span id="accuracy">0</span>%</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
